@@ -51,9 +51,36 @@ DIGIT = ("1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"| "0");
 
 ```
 
-## Diagrama Sintatico
-![alt text]([https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png](https://github.com/carolineclc/CarScriptCompilador/blob/main/DS.png)
-
 ## EXEMPLOS
+### Exemplo 1: Adicionando e Mudando valores em variaveis reservadas:
+Neste exemplo demonstra como usar a linguagem para adicionar ou mudar o valor de variaveis reservadas especiais para o display de status do carro.
+```
+set
+   OIL_LEVEL : OIL_LEVEL + 1
+   WATER_LEVEL : WATER_LEVEL + 5
+done
 
+get
+   oil_variable = OIL_LEVEL
+done
 
+console (oil_variable)
+```
+### Exemplo 2: Fazendo loops
+Este exemplo demonstra a funcionalidade de loops. E possivel que o codigo precise estar contido em um loop constante para que os valores estejam constantemente sendo atualizados
+```
+x = 0
+loop 1
+  set
+    WATER_LEVEL : WATER_LEVEL + x
+    OIL_LEVEL   : 3
+  done
+  x = x  +  1
+  if x > 10
+    console (WATER_LEVEL)
+  else
+    consoke (OIL_LEVEL)
+  done
+done
+
+```
