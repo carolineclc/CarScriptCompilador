@@ -1,5 +1,12 @@
 # CarScriptCompilador
-Compilador da linguagem de programação CarScript.
+### Compilador da linguagem de programação CarScript.
+## Introdução 
+A linguagem CarScript serve para faculitar a programação de dispositivos smart dentro de carros que calculam e fazem o display de funcionalidades e status de carros atuais, incluindo a velocidade do carro atual, nivel de agua e oleo e muitos outros. Essa linguagem tem uma semantica muito intuitiva e facil de programar.
+
+## EBNF
+
+```
+
 BLOCK = { STATEMENT };
 
 STATEMENT  = ("λ" | PRINT | WHILE | IF | SETGET | MATH), "\n";
@@ -41,3 +48,12 @@ NUMBER = DIGIT, { DIGIT } ;
 LETTER = ( "a" | "..." | "z" | "A" | "..." | "Z" ) ;
 
 DIGIT = ("1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"| "0");
+
+```
+
+## Diagrama Sintatico
+![alt text]([https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png](https://github.com/carolineclc/CarScriptCompilador/blob/main/DS.png)
+
+## EXEMPLOS
+
+
